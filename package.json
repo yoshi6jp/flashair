@@ -1,0 +1,14 @@
+{
+  "name": "flashair",
+  "version": "0.1.0",
+  "description": "FlashAir Picture Viewer",
+  "author": "Yoshiharu Kamata",
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-coffee": "~0.10.1",
+    "grunt-contrib-less": "~0.11.0",
+    "grunt-contrib-cssmin": "~0.9.0",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-contrib-copy": "~0.5.0"
+  }
+}

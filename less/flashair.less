@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'gochi_handregular';
+  src: url('fonts/hand.eot');
+  src: url('fonts/hand.eot?#iefix') format('embedded-opentype'),
+       url('fonts/hand.woff') format('woff'),
+       url('fonts/hand.ttf') format('truetype'),
+       url('fonts/hand.svg#gochi_handregular') format('svg');
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('fonts/icon.eot');
+  src: url('fonts/icon.eot?#iefix') format('embedded-opentype'),
+       url('fonts/icon.woff') format('woff'),
+       url('fonts/icon.ttf') format('truetype'),
+       url('fonts/icon.svg#glyphicons_halflingsregular') format('svg');
+}
+
+.thumbnail > video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.thumbnail .caption.filename {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+body {
+  padding-top: 100px;
+  background: url(images/wood.png)
+}
+body.full-screen {
+  padding: 0;
+  height: 100%;
+}
+.picture-loading {
+  opacity: 0.5;
+  margin: 30%;
+}
+.full-screen .img-thumbnail {
+  max-height: 100%;
+  padding: 46px 8px 8px;
+  border-radius: 0;
+}
+.exif-list {
+  opacity: 0.6;
+  border-radius: 6px;
+  color: yellow;
+  border: 1px solid gray;
+  background-color: black;
+}
+.full-screen .exif-info{
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  right: 10%;
+}
+ul.board li.picture {
+  /*padding: 0 10px 20px 0;*/
+  display: inline-block;
+  max-width: 49%;
+
+}
+@media (min-width: 768px) {
+  ul.board li.picture {
+    max-width: 100%;
+  }
+  ul.board li.picture a {
+    margin-left: 30px;
+  }
+}
+ul.board {
+  padding:5px;
+}
+ul.board li.picture a {
+  margin-left: 5px;
+  padding: 10px 10px 0;
+  border-radius: 0;
+  border: 0;
+  text-decoration: none;
+}
+ul.board li.picture a .memo{
+  font-family: 'gochi_handregular', arial, sans-serif;
+}
+@media (min-width: 474px) {
+  ul.board li.picture a > * {
+    max-width: 160px;
+  }
+}
+ul.board a {
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+}
+
+/* Rotate all even images 2 degrees */
+ul.board li:nth-child(even) a {
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+}
+
+/* Don't rotate every third image, but offset its position */
+ul.board li:nth-child(3n) a {
+  -webkit-transform: none;
+  -moz-transform: none;
+  position: relative;
+  top: -5px;
+}
+
+/* Rotate every fifth image by 5 degrees and offset it */
+ul.board li:nth-child(5n) a {
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  position: relative;
+  right: 5px;
+}
+
+/* Keep default rotate for every eighth, but offset it */
+ul.board li:nth-child(8n) a {
+  position: relative;
+  top: 8px;
+  right: 5px;
+}
+
+/* Keep default rotate for every eleventh, but offset it */
+ul.board li:nth-child(11n) a {
+  position: relative;
+  top: 3px;
+  left: -5px;
+}
+
+ul.board li a:hover {
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  position: relative;
+  z-index: 5;
+}
+
+ul.board a {
+  -webkit-transition: -webkit-transform .15s linear;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+}
+
+/* On hover, darken the shadows a bit */
+ul.board a {
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+}
+
+
+
+
