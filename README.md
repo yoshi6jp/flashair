@@ -1,4 +1,4 @@
-Flashair
+FlashAir
 ========
 
 FlashAir Picture Viewer
